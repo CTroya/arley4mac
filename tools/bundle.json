@@ -1,0 +1,18 @@
+{
+  "_help": "base_url + each system's id = full URL the tool fetches. Swap base_url once and every system points at the new host. Per-system value can be a plain id string, an object with id + filters, or an inline manifest dict.",
+
+  "base_url": "https://archive.org/metadata/",
+
+  "nes":       { "id": "NES-Nointro",                                "ext_filter": [".zip"],         "name_filter": ["(USA"],            "name_exclude": ["(Beta", "(Proto", "(Demo", "(Sample", "(Aftermarket", "(Pirate", "(Unl"] },
+  "snes":      { "id": "nointro-snes",                               "ext_filter": [".zip", ".7z"],  "name_filter": ["(USA"],            "name_exclude": ["(Beta", "(Proto", "(Demo", "(Sample", "(Aftermarket"] },
+  "gb":        { "id": "No-Intro_GB",                                "ext_filter": [".zip", ".7z"],  "name_filter": ["(USA", "(World"],  "name_exclude": ["(Beta", "(Proto", "(Demo", "(Sample"] },
+  "gbc":       { "id": "No-Intro_GBC",                               "ext_filter": [".zip", ".7z"],  "name_filter": ["(USA", "(World"],  "name_exclude": ["(Beta", "(Proto", "(Demo", "(Sample"], "dest_subdir": "gb" },
+  "gba":       { "id": "No-Intro_GBA",                               "ext_filter": [".zip", ".7z"],  "name_filter": ["(USA", "(World"],  "name_exclude": ["(Beta", "(Proto", "(Demo", "(Sample"] },
+  "n64":       { "id": "ef_nintendo_64_no-intro_2024-02-10",         "ext_filter": [".zip", ".7z"],  "name_filter": ["(USA"],            "name_exclude": ["(Beta", "(Proto", "(Demo", "(Sample"] },
+  "megadrive": { "id": "sega-genesis-romset-ultra-usa",              "ext_filter": [".zip", ".7z"],                                       "name_exclude": ["(Beta", "(Proto", "(Demo", "(Sample"] },
+  "nds":       { "id": "ni-n-ds-dec_202401",                         "ext_filter": [".7z"],          "name_filter": ["(USA"],            "name_exclude": ["(Beta", "(Proto", "(Demo", "(Sample"] },
+  "psx":       { "id": "re-dump-sony-play-station-ntsc-u-20150524",  "ext_filter": [".7z"],          "subdir_strip": "[ReDump] Sony PlayStation (NTSC-U) (20150524)/", "name_exclude": ["(Beta", "(Proto", "(Demo", "(Sample"] },
+  "ps2":       { "id": "RedumpSonyPS2NTSCU",                         "ext_filter": [".7z"],          "name_filter": ["(USA"],            "name_exclude": ["(Beta", "(Proto", "(Demo", "(Sample"] },
+  "dreamcast": { "id": "sega-dreamcast-redump-collection",           "ext_filter": [".chd"],         "name_filter": ["(USA"],            "name_exclude": ["(Beta", "(Proto", "(Demo", "(Sample"] },
+  "gc":        { "id": "first-party-dolphin-rvz",                    "ext_filter": [".zip", ".7z"],  "name_filter": ["(USA"],            "name_exclude": ["(Beta", "(Proto", "(Demo", "(Sample"] }
+}

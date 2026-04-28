@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<!--
+  Adds an "On-Demand" launch command to each system. After ES-DE first scans
+  ROMs, in any system view: menu (Y/Start) -> "Alternative emulators" ->
+  "On-Demand". This routes all launches through tools/launch.sh which
+  downloads stubs from archive.org on first play and dispatches to the right
+  emulator afterwards.
+
+  Paths in this file are templated by install.sh. Do not hand-edit.
+-->
+<systemList>
+  <system>
+    <name>nes</name>
+    <fullname>Nintendo Entertainment System</fullname>
+    <path>%ROMPATH%/nes</path>
+    <extension>.nes .NES .zip .ZIP .7z .7Z</extension>
+    <command label="On-Demand">__USER_HOME__/Emulation/Tools/launch.sh nes %ROM%</command>
+    <platform>nes</platform>
+    <theme>nes</theme>
+  </system>
+  <system>
+    <name>snes</name>
+    <fullname>Super Nintendo Entertainment System</fullname>
+    <path>%ROMPATH%/snes</path>
+    <extension>.smc .sfc .swc .fig .bs .st .zip .ZIP .7z .7Z</extension>
+    <command label="On-Demand">__USER_HOME__/Emulation/Tools/launch.sh snes %ROM%</command>
+    <platform>snes</platform>
+    <theme>snes</theme>
+  </system>
+  <system>
+    <name>gb</name>
+    <fullname>Nintendo Game Boy</fullname>
+    <path>%ROMPATH%/gb</path>
+    <extension>.gb .gbc .zip .ZIP .7z .7Z</extension>
+    <command label="On-Demand">__USER_HOME__/Emulation/Tools/launch.sh gb %ROM%</command>
+    <platform>gb</platform>
+    <theme>gb</theme>
+  </system>
+  <system>
+    <name>gba</name>
+    <fullname>Nintendo Game Boy Advance</fullname>
+    <path>%ROMPATH%/gba</path>
+    <extension>.gba .zip .ZIP .7z .7Z</extension>
+    <command label="On-Demand">__USER_HOME__/Emulation/Tools/launch.sh gba %ROM%</command>
+    <platform>gba</platform>
+    <theme>gba</theme>
+  </system>
+  <system>
+    <name>n64</name>
+    <fullname>Nintendo 64</fullname>
+    <path>%ROMPATH%/n64</path>
+    <extension>.n64 .v64 .z64 .zip .ZIP .7z .7Z</extension>
+    <command label="On-Demand">__USER_HOME__/Emulation/Tools/launch.sh n64 %ROM%</command>
+    <platform>n64</platform>
+    <theme>n64</theme>
+  </system>
+  <system>
+    <name>megadrive</name>
+    <fullname>Sega Mega Drive / Genesis</fullname>
+    <path>%ROMPATH%/megadrive</path>
+    <extension>.md .gen .smd .bin .zip .ZIP .7z .7Z</extension>
+    <command label="On-Demand">__USER_HOME__/Emulation/Tools/launch.sh megadrive %ROM%</command>
+    <platform>genesis,megadrive</platform>
+    <theme>megadrive</theme>
+  </system>
+  <system>
+    <name>nds</name>
+    <fullname>Nintendo DS</fullname>
+    <path>%ROMPATH%/nds</path>
+    <extension>.nds .zip .ZIP .7z .7Z</extension>
+    <command label="On-Demand">__USER_HOME__/Emulation/Tools/launch.sh nds %ROM%</command>
+    <platform>nds</platform>
+    <theme>nds</theme>
+  </system>
+  <system>
+    <name>3ds</name>
+    <fullname>Nintendo 3DS</fullname>
+    <path>%ROMPATH%/3ds</path>
+    <extension>.3ds .cci .cxi .app .zip .ZIP .7z .7Z</extension>
+    <command label="On-Demand">__USER_HOME__/Emulation/Tools/launch.sh 3ds %ROM%</command>
+    <platform>3ds</platform>
+    <theme>3ds</theme>
+  </system>
+  <system>
+    <name>psx</name>
+    <fullname>Sony PlayStation</fullname>
+    <path>%ROMPATH%/psx</path>
+    <extension>.cue .bin .iso .img .chd .pbp .ecm .zip .ZIP .7z .7Z</extension>
+    <command label="On-Demand">__USER_HOME__/Emulation/Tools/launch.sh psx %ROM%</command>
+    <platform>psx</platform>
+    <theme>psx</theme>
+  </system>
+  <system>
+    <name>ps2</name>
+    <fullname>Sony PlayStation 2</fullname>
+    <path>%ROMPATH%/ps2</path>
+    <extension>.iso .bin .cue .chd .gz .ZIP .7z .7Z</extension>
+    <command label="On-Demand">__USER_HOME__/Emulation/Tools/launch.sh ps2 %ROM%</command>
+    <platform>ps2</platform>
+    <theme>ps2</theme>
+  </system>
+  <system>
+    <name>gc</name>
+    <fullname>Nintendo GameCube</fullname>
+    <path>%ROMPATH%/gc</path>
+    <extension>.iso .gcm .gcz .rvz .ciso .wbfs .wia .zip .ZIP .7z .7Z</extension>
+    <command label="On-Demand">__USER_HOME__/Emulation/Tools/launch.sh gc %ROM%</command>
+    <platform>gc</platform>
+    <theme>gc</theme>
+  </system>
+  <system>
+    <name>wii</name>
+    <fullname>Nintendo Wii</fullname>
+    <path>%ROMPATH%/wii</path>
+    <extension>.iso .wbfs .rvz .ciso .gcz .wia</extension>
+    <command label="On-Demand">__USER_HOME__/Emulation/Tools/launch.sh wii %ROM%</command>
+    <platform>wii</platform>
+    <theme>wii</theme>
+  </system>
+  <system>
+    <name>dreamcast</name>
+    <fullname>Sega Dreamcast</fullname>
+    <path>%ROMPATH%/dreamcast</path>
+    <extension>.cdi .gdi .chd .zip .ZIP .7z .7Z</extension>
+    <command label="On-Demand">__USER_HOME__/Emulation/Tools/launch.sh dreamcast %ROM%</command>
+    <platform>dreamcast</platform>
+    <theme>dreamcast</theme>
+  </system>
+  <system>
+    <name>arcade</name>
+    <fullname>Arcade</fullname>
+    <path>%ROMPATH%/arcade</path>
+    <extension>.zip .ZIP .7z .7Z</extension>
+    <command label="On-Demand">__USER_HOME__/Emulation/Tools/launch.sh arcade %ROM%</command>
+    <platform>arcade</platform>
+    <theme>arcade</theme>
+  </system>
+</systemList>

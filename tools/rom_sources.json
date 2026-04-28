@@ -1,0 +1,5 @@
+{
+  "_help": "Default null = use the bundle.json shipped next to this script (~/Emulation/Tools/bundle.json after install). Set to any http(s):// URL to point at a different bundle (a gist, your own server, a fork, whatever).",
+
+  "source_url": null
+}
